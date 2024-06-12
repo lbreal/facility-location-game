@@ -181,6 +181,7 @@
                    if (userCost === minCost) {
                         message = 'Congratulations! You found the optimal solution.';
                         messageDiv.style.color = 'green';
+                        optimalConnections = bestConnections;
                     } else {
                         message = `Not this time! The optimal cost is ${minCost}.`;
                         messageDiv.style.color = 'red';
