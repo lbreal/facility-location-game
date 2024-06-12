@@ -171,13 +171,14 @@
                     const userCost = calculateTotalCost(selectedFacilities);
 
                    if (userCost === minCost) {
-                        message = 'Parabéns! Você encontrou a solução ótima.';
+                        message = 'Parabéns! Você encontrou a solução ótima!';
                         messageDiv.style.color = 'green';
                     } else {
-                        message = 'Não foi dessa vez.';
+                        message = 'Não foi dessa vez!';
                         messageDiv.style.color = 'red';
                         optimalFacilities = bestFacilities;
                         optimalConnections = bestConnections;
+                        optimalCost = minCost;
                     }
                 }
             }
