@@ -171,10 +171,10 @@
                     const userCost = calculateTotalCost(selectedFacilities);
 
                    if (userCost === minCost) {
-                        message = 'Parabéns! Você encontrou a solução ótima!';
+                        message = 'Congratulations! You found the optimal solution.';
                         messageDiv.style.color = 'green';
                     } else {
-                        message = 'Não foi dessa vez! O custo ótimo é ${minCost}.';
+                        message = 'Not this time! The optimal cost is ${minCost}.';
                         messageDiv.style.color = 'red';
                         optimalFacilities = bestFacilities;
                         optimalConnections = bestConnections;
